@@ -59,6 +59,4 @@ colnames(SummarisedOnlyMeanAndStdMeasurements) <- sapply(colnames(SummarisedOnly
 if (!dir.exists(CleanDataPath)) {
   dir.create(CleanDataPath)
 }
-write.csv(Data, file = paste(CleanDataPath, 'data.csv', sep = '/'))
-write.csv(OnlyMeanAndStdMeasurements, file = paste(CleanDataPath, 'OnlyMeanAndStdMeasurements.csv', sep = '/'))
-write.csv(SummarisedOnlyMeanAndStdMeasurements, file = paste(CleanDataPath, 'summary.csv', sep = '/'))
+write.table(SummarisedOnlyMeanAndStdMeasurements, file = paste(CleanDataPath, 'summary.csv', sep = '/'), row.names = FALSE)

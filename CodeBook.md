@@ -21,5 +21,5 @@ The two data tables were then merged (row binding) into one large data table, wh
 
 Furthermore, measurements on the mean and standard deviation were extracted and stored in ./clean_data/OnlyMeanAndStdMeasurement.csv. The respective measurements were determined by looking for substrings "mean" and "std" in the column names.
 
-Lastly, a summary of ./clean_data/OnlyMeanAndStdMeasurement.csv was created by taking the mean of each column, grouped by activity and subject.
-In order to distinguish these averaged variables from raw data variables, the string "mean" is prefixed.
+Lastly, a summary of ./clean_data/OnlyMeanAndStdMeasurement.csv was created by taking the mean of each column, grouped by activity and subject. In order to distinguish these averaged variables from raw data variables, the string "mean" is prefixed. 
+The summary is stored in ./clean_data/summary.csv.
